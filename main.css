@@ -1,0 +1,323 @@
+body{
+	padding: 0 auto;
+	margin:auto;
+	/*width: 100vw;*/
+}
+.navBar{
+  /*background-image: url(./images/moving_road.gif);*/
+  font-family: 'Major Mono Display', monospace;
+  /*background: rgba(246, 246, 246, .76);*/
+  height: 8vh;
+  /*width: 70vw;*/
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top:0;
+  z-index: 2;
+}
+footer{
+  z-index: 2;
+
+  border-top:  solid 3px rgb(246, 246, 246);
+  padding-left: 3%;
+  font-family: 'Major Mono Display', monospace;
+  height: 8vh;
+  width: 80vw;
+  font-weight: 800;
+  background-position: center;
+  color: rgb(246, 246, 246);
+  font-size: 1.5em;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 10px;
+  background-size: cover;
+  position: fixed;
+  bottom: 0;
+  transition: 0.7s;
+
+}
+footer:hover{
+	background: rgb(246, 246, 246);
+	color: black;
+
+}
+a, .section_title, footer, .close_btn{
+	cursor: pointer;
+	 transition: 0.7s;
+
+}
+.links{
+	font-size: 3em;
+  text-decoration: none;
+  color: black;
+
+}
+/*a:link{
+	color: black;	
+  text-decoration: none;
+  padding-left: 3%;
+ 
+}*/
+a:hover{
+	/*color: black;*/
+
+	transform: scale(1.3);
+
+}
+/*
+a:hover{
+	transform: scale(1.3);
+	 transition: 0.7s;
+}*/
+.navLinks{
+	 transition: 0.7s;
+	 padding-left:3%; 
+	color: rgba(246, 246, 246);
+  text-decoration: none;
+	font-size: 2em;
+}
+.navLinks:hover{
+	transform: scale(1.3);
+
+	margin: 3%;
+	font-weight: 800;
+}
+
+/*.video_wrapper{
+
+	background-position: center;
+	background: red;
+	overflow: hidden;
+	height: 100vh;
+ 	z-index: 0;
+}*/
+video{
+	margin:1%;
+	width: 28vw;
+	height: 88vh;
+
+}
+.landing{
+	background-image: url(./images/Prospect.jpg);
+	background-size: 100vw 100vh;
+	background-repeat: no-repeat;
+}.about{
+	background: url(./images/eager.jpg);
+	background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+.skills{
+	background: url(./images/cube.jpg);
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;
+}
+.projects{background: url(./images/daGarden.JPG);
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;
+}
+.parallax{
+
+  	z-index: 1;
+	background-attachment: fixed;
+	background-position: center;
+	height: 100vh;
+}
+.title_backdrop{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background:rgba(0, 0, 0, .2);
+}
+.section_title, .landing_string{
+    font-family: 'Major Mono Display', monospace;
+	font-size: 2.75em;
+	color: rgb(92, 181, 237);
+	z-index: 3;
+	 transition: 0.7s;
+}
+.section_title:hover{
+	transform: scale(1.3);
+	font-weight: 800;
+}
+.modal_container{
+	display: none;	
+	z-index: 5;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background: transparent;
+	/*padding: 1% ;*/
+	/*margin:1% ;*/
+}
+.modal_content{
+	display: flex;
+	width: 95vw;
+	height: 95vh;
+	justify-content: center;
+	/*margin: 1% auto;*/
+	border-radius: 30px;
+	background: rgb(1, 101, 133);
+	position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.modal_description{
+	font-size: 2em;
+	width: 68%;
+	height: 90%; 
+	padding-left: 1%; 
+	padding-right: -5%;
+}
+p{
+	font-family:  'Gloria Hallelujah', cursive;
+	font-size: 1.25em;
+}
+.close_btn{
+	position: absolute;
+	right:-1%;
+	top:-2%;
+	height:45px;
+	width: 45px;
+} 
+.skill_flex{
+	display: flex;
+	/*flex-direction: column;*/
+	justify-content: space-between;
+	height: 100%;
+}
+
+.skills_tab, .project_tab{
+width: 100%;
+display: none;
+}
+#right_arrow, #project_right_arrow{
+	/*transform: scale(.3);*/
+	margin-left: -50px;
+}
+#left_arrow, #project_left_arrow{ 
+	margin-right: -50px;
+	transform:  rotate(180deg);
+}
+.left_arrow_container, .right_arrow_container{
+	width: 10vw;
+	height: 100%;
+}
+.left_arrow_container{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.right_arrow_container{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.skill_container, .project_container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 80vw;
+}
+th{
+	font-size: 3em;
+	text-decoration: underline;
+ 	font-family: 'Major Mono Display', monospace;
+}
+td{
+	padding-top: 3%;
+	padding-bottom: 3%;
+	font-size: 2em;
+	text-align: center;
+	width: 30%;
+}
+table{
+	font-family:  'Gloria Hallelujah', cursive;
+	border: 5px solid black;
+	width: 100%;
+}
+
+.project_details{
+	display: flex;
+	align-items: center;
+}
+.project_details h1{
+	font-size: 3.5em;
+ 	font-family: 'Major Mono Display', monospace;
+}
+.contact_details{
+	padding-top:3%;
+    font-family: 'Major Mono Display', monospace;
+    display: flex;
+ 	justify-content: space-around;
+    flex-direction: column;
+	text-align: center;
+	width: 65%;
+	height:80%;
+	border: 1px solid black;
+	background: rgba(200, 150, 112, .27);
+	z-index: 1;
+	position: absolute;
+	left:7%;
+	top:9%;
+}
+.tree{
+	background:url(./images/trees.jpg);
+	background-size: cover;
+	width: 30%;
+	height: 90%;
+	position: absolute;
+	top:5%;
+	right:1%;
+	z-index: 0;
+}
+#prospect{
+	background-image: url(./images/Prospect.jpg);
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+}
+#chewsy{
+	background:url(./images/chewsy.png);
+	background-size: cover;
+	height:68vh;
+	width: 100%;
+}
+#movie_club{
+	background:url(./images/movieClub.png);
+	background-size: cover;
+	height:68vh;
+	width: 100%;
+}
+#perspective{
+	background:url(./images/views.png);
+	background-size: 100vw 100vh;
+	background-position: 100% 100%;
+	height:68vh;
+	width: 100%;
+}
+#reach_goal{
+	background:url(./images/reachGoal.png);
+	background-size: cover;
+	height:68vh;
+	width: 100%;
+}
+#renew{
+	background:url(./images/renew.png);
+	background-size: cover;
+	background-position: 50% 30%;
+	height:68vh;
+	width: 100%;
+}
